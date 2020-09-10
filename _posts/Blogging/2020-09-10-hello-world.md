@@ -7,4 +7,10 @@ tags:
   - Test
 toc: true
 ---
-아무거나
+#### Transformer-layer distillation
+
+* Loss for attention mechanism
+
+  $$l_{attn} = \frac 1 h sum^h_{i = 1} \text{MSE}(\textbf A_i^S, \textbf A_i^T )$$
+
+* 특이한 점은 softmax를 타기 전의 matrix를 loss function의 input으로 넣는 것인데, 이게 수렴이 더 빠르게 되었다고 한다.
