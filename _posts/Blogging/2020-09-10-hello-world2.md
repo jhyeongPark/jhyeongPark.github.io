@@ -1,7 +1,7 @@
 ---
 title: "Test"
 categories: 
-  - Study
+  - Blogging
 last_modified_at: 2020-09-10
 tags:
   - Test
