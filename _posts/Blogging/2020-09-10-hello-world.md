@@ -5,6 +5,7 @@ categories:
 last_modified_at: 2020-09-10
 tags:
   - Test
+use_math: true
 toc: true
 ---
 #### Transformer-layer distillation
