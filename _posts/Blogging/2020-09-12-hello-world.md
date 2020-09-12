@@ -12,9 +12,9 @@ toc: true
 
 * Loss for attention mechanism
 
-\\[
-y=ax+b
-\\]
+
+\\[ y=ax+b \\]
+
 
 $
 y=cx+d
