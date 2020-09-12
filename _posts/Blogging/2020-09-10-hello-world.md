@@ -3,7 +3,6 @@ title: "Test"
 categories: 
   - Blogging
 last_modified_at: 2020-09-10
-page.date: true
 tags:
   - Test
 use_math: true
