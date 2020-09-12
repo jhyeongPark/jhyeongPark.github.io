@@ -15,6 +15,7 @@ toc: true
 
 \[ y=ax+b \]
 
+\\[ y=ax+b \\]
 
 $
 y=cx+d
