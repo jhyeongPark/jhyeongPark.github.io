@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko"
 title                    : "적자생존"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -96,7 +96,7 @@ author:
   name             : "JaeHyeong Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "문돌이의 데이터 분석기"
-  location         : "Seoul"
+  location         : "Seoul, Korea"
   email            :
   links:
     - label: "Email"
