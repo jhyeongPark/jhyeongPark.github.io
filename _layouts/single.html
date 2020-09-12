@@ -27,14 +27,19 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          
+          <!-- 개별 포스트에 업데이트 날짜 띄우기 -->
+          
+          <!-- page__meta -> page__date로 변경 -->
           {% include page__date.html %}
           
-<!--           {% if post.date %}
-            <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d %Y" }}</p>
-          {% endif %} -->
+          <!-- 추가 -->
+          
           
         </header>
-      
+        {% if post.date %}
+          <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d %Y" }}</p>
+        {% endif %}
       
 <!--         {% if post.date %}
           <span class="page__date"><i class="far fa-clock" aria-hidden="true"></i>{{ post.date | date: "%Y-%M-%d" }}</span>
