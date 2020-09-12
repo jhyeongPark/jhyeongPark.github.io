@@ -12,7 +12,11 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    <script type="text/x-mathjax-config">
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
+    
+<!--     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         TeX: {
           equationNumbers: {
@@ -34,10 +38,8 @@
     </script>
     <script type="text/javascript" async
             src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-<!--     {% if page.use_math %}
-      {% include mathjax_support.html %}
-    {% endif %} -->
+    </script> -->
+     
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
