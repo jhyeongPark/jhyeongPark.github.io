@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "JaeHyeong Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "문돌이의 데이터 분석기"
+  location         : "Seoul"
   email            :
   links:
     - label: "Email"
