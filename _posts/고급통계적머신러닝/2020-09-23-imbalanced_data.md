@@ -103,10 +103,9 @@ from sklearn.datasets import make_classification
 from imblearn.over_sampling import SMOTE, ADASYN
 ```
 
-##### make_classification함수는 설정에 따른 분류용 가상 데이터를 생성하는 명령이다. 이 함수의 인수와 반환값은 다음과 같다.
+make_classification함수는 설정에 따른 분류용 가상 데이터를 생성하는 명령이다. 이 함수의 인수와 반환값은 다음과 같다.<br>
 
 인수:
-
 - n_samples : 표본 데이터의 수, 디폴트 100 <br>
 - n_features : 독립 변수의 수, 디폴트 20 <br>
 - n_informative : 독립 변수 중 종속 변수와 상관 관계가 있는 성분의 수, 디폴트 2 <br>
