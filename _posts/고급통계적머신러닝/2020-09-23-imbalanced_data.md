@@ -22,12 +22,7 @@ toc_sticky: true
 
 이렇게 각 클래스에 속한 데이터의 갯수의 차이에 의해 발생하는 문제들을 <span style="color:red">`불균형(비대칭) 데이터 문제(imbalanced data problem)`</span>이라고 한다.<br>
 
-# 다라니
-가나다
----
-
-**해결책**
----
+## 해결책
 
 ### 1. 과소표집(Undersampling)
 <br><br>
@@ -79,7 +74,6 @@ toc_sticky: true
 따라서, 일반적으로 과소표집보다는 **과대표집**이 통계적으로 유용합니다.
 
 **과대표집의 대표적인 방법**
----
 
 #### 1. SMOTE
 **`Synthetic Minority Oversampling Technique, 합성소수표집법`**<br>
@@ -96,7 +90,7 @@ toc_sticky: true
 **`Adaptive Synthetic Sampling Method, 조절합성표집법`**<br>
 - ADASYN은 SMOTE와 동일하지만, 소수클래스에 있는 각 $x_i$에 대응하여 생성된 합성표본수를 $S_i$안에 포함된 다수클래스의 표본 수에 **비례**하도록 추출한 것만 차이가 있다. 여기에서 다수클래스는 해당 소수클래스에 속하지 않은 클래스를 의미한다.
 
-### Reference
+## Reference
 ---
 - 박유성,『파이썬을 이용한 통계적 머신러닝』, 자유아카데미(2020)
 - <https://datascienceschool.net/view-notebook/c1a8dad913f74811ae8eef5d3bedc0c3/>
