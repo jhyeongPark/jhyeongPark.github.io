@@ -25,7 +25,7 @@ toc_sticky: true
 ## 해결책
 
 ### 1. 과소표집(Undersampling)
-<br><br>
+<br>
 다수클래스(major class)의 표본을 임의로(randomly) 학습 데이터로부터 제거. 즉, 다수의 클래스 데이터에서 일부만 사용.<br>
 
 <p align="center"><img src="/assets/images/undersampling.PNG"></p>
@@ -48,7 +48,7 @@ toc_sticky: true
 <br>
 
 ### 2. 과대표집(Oversampling)
-<br><br>
+<br>
 소수클래스(minor class)의 표본을 복제하여 이를 학습데이터에<br>
 소수 클래스 데이터를 증가시킴<br>
 
