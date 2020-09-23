@@ -22,10 +22,10 @@ toc_sticky: true
 이렇게 각 클래스에 속한 데이터의 갯수의 차이에 의해 발생하는 문제들을 <span style="color:red">`불균형(비대칭) 데이터 문제(imbalanced data problem)`</span>이라고 한다.<br>
 
 
-** 해결책 **
+**해결책**
 ---
 
-###1. 과소표집(Undersampling)<br><br>
+### 1. 과소표집(Undersampling)<br><br>
 다수클래스(major class)의 표본을 임의로(randomly) 학습 데이터로부터 제거. 즉, 다수의 클래스 데이터에서 일부만 사용.<br>
 
 <p align="center"><img src="/assets/images/undersampling.PNG"></p>
@@ -45,7 +45,7 @@ toc_sticky: true
 |0|5|
 |1|5|
 
-###2. 과대표집(Oversampling)<br><br>
+### 2. 과대표집(Oversampling)<br><br>
 소수클래스(minor class)의 표본을 복제하여 이를 학습데이터에<br>
 소수 클래스 데이터를 증가시킴<br>
 
