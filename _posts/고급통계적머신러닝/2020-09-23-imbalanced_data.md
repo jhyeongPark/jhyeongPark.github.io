@@ -7,6 +7,7 @@ tags:
   - ML
 use_math: true
 toc: true
+toc_sticky: true
 ---
 
 - 머신러닝의 목적이 **분류(Classification)** 일때, 특정 클래스의 관측치가 다른 클래스에 비해 매우 낮게 나타나면 이러한 자료를 <mark>불균형자료</mark>라고 한다.
@@ -21,12 +22,14 @@ toc: true
 이렇게 각 클래스에 속한 데이터의 갯수의 차이에 의해 발생하는 문제들을 <span style="color:red">`불균형(비대칭) 데이터 문제(imbalanced data problem)`</span>이라고 한다.<br>
 
 
-### 해결책
+** 해결책 **
 ---
 
-**1. 과소표집(Undersampling)**<br><br>
-다수클래스(major class)의 표본을 임의로(randomly) 학습 데이터로부터 제거. 즉, 다수의 클래스 데이터에서 일부만 사용.
-![img_area](/assets/images/undersampling.PNG){: .center}
+###1. 과소표집(Undersampling)<br><br>
+다수클래스(major class)의 표본을 임의로(randomly) 학습 데이터로부터 제거. 즉, 다수의 클래스 데이터에서 일부만 사용.<br>
+
+<p align="center"><img src="/assets/images/undersampling.PNG"></p>
+
 
 예를 들어, 0과 1이라는 클래스 데이터가 각각 100개, 5개가 있을때, 이 중 0 클래스의 데이터 중 95개를 버리고 5개만 사용합니다.
 
@@ -42,10 +45,11 @@ toc: true
 |0|5|
 |1|5|
 
-**2. 과대표집(Oversampling)**<br><br>
+###2. 과대표집(Oversampling)<br><br>
 소수클래스(minor class)의 표본을 복제하여 이를 학습데이터에<br>
-소수 클래스 데이터를 증가시킴
-![img_area](/assets/images/oversampling.PNG){: .center}
+소수 클래스 데이터를 증가시킴<br>
+
+<p align="center"><img src="/assets/images/oversampling.PNG"></p>
 
 예를 들어, 0과 1이라는 클래스 데이터가 각각 100개, 5개가 있을때, 이 중 0 클래스의 데이터를 복제해 100개를 만들어 사용합니다.
 
@@ -66,19 +70,22 @@ toc: true
 - 과소표집은 표본의 수를 줄이기 때문에 모형의 정밀도를 낮추게 됩니다.<br>
 따라서, 일반적으로 과소표집보다는 **과대표집**이 통계적으로 유용합니다.
 
-### 과대표집의 대표적인 방법
+**과대표집의 대표적인 방법**
 ---
 
-##### 1. SMOTE ( Synthetic Minority Oversampling Technique, 합성소수표집법 )
+##### 1. SMOTE
+`SMOTE ( Synthetic Minority Oversampling Technique ), 합성소수표집법`<br>
+
 - 소수클래스에 속한 i번째 관측치의 특성변수 $\mathbf{x_i}$ 에 대해 n-nearnest neighbors셋 $S_i$를 생성한다.<br>
 단, k개의 neighbors는 모두 소수클래스에 속한 관측치이다. 그러면 새로운 합성 관측치 **$x_{syn}$**은<br><br>
 \[ x_{syn} = x_i + λ (x_k-x_i), x_k \in S_i \]<br>
  $\mathbf{x_i}$는 $S_i$에서 임의로 추출, λ는 0~1의 값으로 균등분포에서 임의로 추출한다<br><br>
  
-- 이러한 절차를 소수클래스에 속한 모든 관측치에 대해 다수클래스에 속하는 수가 될때까지 반복적으로 실시한다 .
+- 이러한 절차를 소수클래스에 속한 모든 관측치에 대해 다수클래스에 속하는 수가 될때까지 반복적으로 실시한다.
  
 
-##### 2. ADASYN ( Adaptive Synthetic Sampling Method, 조절합성표집법 )
+##### 2. ADASYN
+`ADASYN ( Adaptive Synthetic Sampling Method, 조절합성표집법 )`<br>
 - ADASYN은 SMOTE와 동일하지만, 소수클래스에 있는 각 $x_i$에 대응하여 생성된 합성표본수를 $S_i$안에 포함된 다수클래스의 표본 수에 비례하도록 추출한 것만 차이가 있다. 여기에서 다수클래스는 해당 소수클래스에 속하지 않은 클래스를 의미한다.
 
 ### Reference
