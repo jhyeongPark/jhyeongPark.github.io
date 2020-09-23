@@ -76,7 +76,7 @@ toc_sticky: true
 ---
 
 ##### 1. SMOTE
-**`SMOTE ( Synthetic Minority Oversampling Technique ), 합성소수표집법`**<br>
+**`Synthetic Minority Oversampling Technique, 합성소수표집법`**<br>
 
 - 소수클래스에 속한 i번째 관측치의 특성변수 $\mathbf{x_i}$ 에 대해 n-nearnest neighbors셋 $S_i$를 생성한다.<br>
 단, k개의 neighbors는 모두 소수클래스에 속한 관측치이다. 그러면 새로운 합성 관측치 **$x_{syn}$**은<br><br>
@@ -87,7 +87,7 @@ toc_sticky: true
  
 
 ##### 2. ADASYN
-**`ADASYN ( Adaptive Synthetic Sampling Method, 조절합성표집법 )`**<br>
+**`Adaptive Synthetic Sampling Method, 조절합성표집법`**<br>
 - ADASYN은 SMOTE와 동일하지만, 소수클래스에 있는 각 $x_i$에 대응하여 생성된 합성표본수를 $S_i$안에 포함된 다수클래스의 표본 수에 비례하도록 추출한 것만 차이가 있다. 여기에서 다수클래스는 해당 소수클래스에 속하지 않은 클래스를 의미한다.
 
 ### Reference
