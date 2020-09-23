@@ -73,7 +73,7 @@ toc_sticky: true
 - 과소표집은 표본의 수를 줄이기 때문에 모형의 정밀도를 낮추게 됩니다.<br>
 따라서, 일반적으로 과소표집보다는 **과대표집**이 통계적으로 유용합니다.<br>
 
-####과대표집의 대표적인 방법
+#### 과대표집의 대표적인 방법
 ##### 1. SMOTE
 **`Synthetic Minority Oversampling Technique, 합성소수표집법`**<br>
 - 소수클래스에 속한 i번째 관측치의 특성변수 $\mathbf{x_i}$ 에 대해 n-nearnest neighbors셋 $S_i$를 생성한다.<br>
