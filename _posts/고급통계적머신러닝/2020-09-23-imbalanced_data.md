@@ -22,6 +22,9 @@ toc_sticky: true
 
 이렇게 각 클래스에 속한 데이터의 갯수의 차이에 의해 발생하는 문제들을 <span style="color:red">`불균형(비대칭) 데이터 문제(imbalanced data problem)`</span>이라고 한다.<br>
 
+# 다라니
+가나다
+---
 
 **해결책**
 ---
