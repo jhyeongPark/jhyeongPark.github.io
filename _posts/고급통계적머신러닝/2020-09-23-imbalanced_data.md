@@ -45,6 +45,8 @@ toc_sticky: true
 |0|5|
 |1|5|
 
+<br>
+
 ### 2. 과대표집(Oversampling)<br><br>
 소수클래스(minor class)의 표본을 복제하여 이를 학습데이터에<br>
 소수 클래스 데이터를 증가시킴<br>
