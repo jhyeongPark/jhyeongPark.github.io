@@ -9,6 +9,7 @@ use_math: true
 toc: true
 toc_sticky: true
 ---
+## 불균형데이터(imbalanced data)란?
 
 - 머신러닝의 목적이 **분류(Classification)** 일때, 특정 클래스의 관측치가 다른 클래스에 비해 매우 낮게 나타나면 이러한 자료를 <mark>불균형자료</mark>라고 한다.
 
@@ -25,7 +26,8 @@ toc_sticky: true
 **해결책**
 ---
 
-### 1. 과소표집(Undersampling)<br><br>
+### 1. 과소표집(Undersampling)
+<br><br>
 다수클래스(major class)의 표본을 임의로(randomly) 학습 데이터로부터 제거. 즉, 다수의 클래스 데이터에서 일부만 사용.<br>
 
 <p align="center"><img src="/assets/images/undersampling.PNG"></p>
@@ -47,7 +49,8 @@ toc_sticky: true
 
 <br>
 
-### 2. 과대표집(Oversampling)<br><br>
+### 2. 과대표집(Oversampling)
+<br><br>
 소수클래스(minor class)의 표본을 복제하여 이를 학습데이터에<br>
 소수 클래스 데이터를 증가시킴<br>
 
@@ -75,7 +78,7 @@ toc_sticky: true
 **과대표집의 대표적인 방법**
 ---
 
-##### 1. SMOTE
+#### 1. SMOTE
 **`Synthetic Minority Oversampling Technique, 합성소수표집법`**<br>
 
 - 소수클래스에 속한 i번째 관측치의 특성변수 $\mathbf{x_i}$ 에 대해 n-nearnest neighbors셋 $S_i$를 생성한다.<br>
@@ -86,7 +89,7 @@ toc_sticky: true
 - 이러한 절차를 소수클래스에 속한 모든 관측치에 대해 다수클래스에 속하는 수가 될때까지 반복적으로 실시한다.
  
 
-##### 2. ADASYN
+#### 2. ADASYN
 **`Adaptive Synthetic Sampling Method, 조절합성표집법`**<br>
 - ADASYN은 SMOTE와 동일하지만, 소수클래스에 있는 각 $x_i$에 대응하여 생성된 합성표본수를 $S_i$안에 포함된 다수클래스의 표본 수에 **비례**하도록 추출한 것만 차이가 있다. 여기에서 다수클래스는 해당 소수클래스에 속하지 않은 클래스를 의미한다.
 
