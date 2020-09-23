@@ -74,15 +74,12 @@ toc_sticky: true
 따라서, 일반적으로 과소표집보다는 **과대표집**이 통계적으로 유용합니다.<br>
 
 >**과대표집의 대표적인 방법**
-
 >>#### 1. SMOTE
 >>**`Synthetic Minority Oversampling Technique, 합성소수표집법`**<br>
-
 >>- 소수클래스에 속한 i번째 관측치의 특성변수 $\mathbf{x_i}$ 에 대해 n-nearnest neighbors셋 $S_i$를 생성한다.<br>
 단, k개의 neighbors는 모두 소수클래스에 속한 관측치이다. 그러면 새로운 합성 관측치 **$x_{syn}$**은<br><br>
 >>\[ x_{syn} = x_i + λ (x_k-x_i), x_k \in S_i \]<br>
 >> $\mathbf{x_i}$는 $S_i$에서 임의로 추출, λ는 0~1의 값으로 균등분포에서 임의로 추출한다<br><br>
- 
 >>- 이러한 절차를 소수클래스에 속한 모든 관측치에 대해 다수클래스에 속하는 수가 될때까지 반복적으로 실시한다.
  
 
