@@ -95,9 +95,9 @@ analytics:
 author:
   name             : "JaeHyeong Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "부족함을 깨닫고, 극복하기 위해 노력하고 "
+  bio              : "부족함을 깨닫고, 극복하기 위해 노력하고 있습니다"
   location         : "Seoul, Korea"
-  email            :
+  email            : jhyeong.park@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
