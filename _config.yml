@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "지금 하자"
+title                    : "@"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "JaeHyeong Park"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "JaeHyeong Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "부족함을 깨닫고, 극복하기 위해 노력하고 있습니다"
+  bio              : "부족함을 깨닫고,</br> 극복하기 위해 노력하고 있습니다"
   location         : "Seoul, Korea"
   email            : 
   links:
